@@ -19,8 +19,13 @@ h1 {
 }
 
 .gamePlace {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     border-radius: 12px;
     width: 60px;
     height: 60px;
+    color: red;
+    font-size: larger;
 }
