@@ -29,3 +29,11 @@ h1 {
     color: red;
     font-size: larger;
 }
+
+#newGame {
+    padding: 12px;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    margin-top: 20px;
+}
