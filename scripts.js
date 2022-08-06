@@ -69,6 +69,10 @@ const playGame = (() => {
             gameBoard.gridContents[i] = " ";
         };
         gameBoard.generateBoard();
+        player1.name = prompt("Player 1 enter your name:")
+        document.getElementById("play1Name").innerHTML = player1.name;
+        player2.name = prompt("Player 2 enter your name:")
+        document.getElementById("play2Name").innerHTML = player2.name;
     });
 
     //Below section is core functionality
