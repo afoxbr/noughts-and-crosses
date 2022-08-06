@@ -27,7 +27,8 @@ h1 {
     width: 60px;
     height: 60px;
     color: red;
-    font-size: larger;
+    font-size: x-large;
+    font-weight: 900;
 }
 
 #newGame {
