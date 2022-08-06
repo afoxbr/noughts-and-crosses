@@ -7,18 +7,33 @@
 </head>
 <body>
     <h1>Noughts & Crosses</h1>
-    <div class="gameGrid">
-        <button class="gamePlace" id="0"></button>
-        <button class="gamePlace" id="1"></button>
-        <button class="gamePlace" id="2"></button>
-        <button class="gamePlace" id="3"></button>
-        <button class="gamePlace" id="4"></button>
-        <button class="gamePlace" id="5"></button>
-        <button class="gamePlace" id="6"></button>
-        <button class="gamePlace" id="7"></button>
-        <button class="gamePlace" id="8"></button>
+    <div class="display">
+        <div class="playerInfo" id="play1">
+            <h3>Player 1</h3>
+            <p class="symbolMark">X</p>
+            <p id="win1">Rounds won:</p>
+        </div>
+        <div class="gameGrid" id="theGrid">
+            <button class="gamePlace" id="0"></button>
+            <button class="gamePlace" id="1"></button>
+            <button class="gamePlace" id="2"></button>
+            <button class="gamePlace" id="3"></button>
+            <button class="gamePlace" id="4"></button>
+            <button class="gamePlace" id="5"></button>
+            <button class="gamePlace" id="6"></button>
+            <button class="gamePlace" id="7"></button>
+            <button class="gamePlace" id="8"></button>
+        </div>
+        <div class="playerInfo" id="play2">
+            <h3>Player 2</h3>
+            <p class="symbolMark">O</p>
+            <p id="win2">Rounds won:</p>
+        </div>
     </div>
-    <button id="newGame">New Game</button>
+    <div class="buttons">
+        <button id="newGame">New Game</button>
+        <button id="aiGame">AI Game</button>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
