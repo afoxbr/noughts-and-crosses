@@ -52,6 +52,7 @@ const player = (name, symbol, domRef) => {
         symbol,
         domRef,
         winCount,
+        gameWon,
     };
 };
 
@@ -60,7 +61,6 @@ const player2 = player("Player 2", "O", "win2");
 
 //The machinery that makes the game move
 const playGame = (() => {
-    let ai = false;
     //New game button, empties grid, resets winCounts
     document.getElementById("newGame").addEventListener("click", function() {
         player1.winCount = 0;
@@ -206,6 +206,36 @@ const playGame = (() => {
             gameBoard.generateBoard();
         });
     };
+
+    //AI mode. AI is, of course, an Olympic gymnastics tier stretch. It's random
+    //Nonfunctional at the moment. Will try to make it work
+//    document.getElementById("aiGame").addEventListener("click", function() {
+//        lastClick = "O";
+//        player1.winCount = 0;
+//        player2.winCount = 0;
+//        for (i = 0; i < 9; i++) {
+//            gameBoard.gridContents[i] = " ";
+//        };
+//        gameBoard.generateBoard();
+//        player1.name = prompt("Player 1 enter your name:")
+//        document.getElementById("play1Name").innerHTML = player1.name;
+//        player2.name = "Calculon"
+//        document.getElementById("play2Name").innerHTML = player2.name;
+//        document.addEventListener("click", function() {
+//            while (lastClick == "X") {
+//                function getRandomInt(min, max) {
+//                    min = Math.ceil(min);
+//                    max = Math.floor(max);
+//                    return Math.floor(Math.random() * (max-min) + min);
+//                };
+//                k = (getRandomInt(0, 9));
+//                if (gameBoard.gridContents[k] == " ") {
+//                    gameBoard.gridContents[k] = "O";
+//                    lastClick = "O";
+//                };
+//            };
+//        });
+//    });
     clickBoard();
     return {
         clickBoard,
